@@ -1,0 +1,163 @@
+/*GENERAL CONFIGURATION*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAV BAR CONFIGURATION*/
+
+nav {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    padding: 11% 0%;
+}
+
+/* Buttons Menu */
+#homeButton, #aboutMeButton, #skillsButton, #portfolioButton, #contactButton {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    background-color: lightblue;
+    cursor: pointer;
+    width: 4.3rem;
+    margin-top: 0.2rem;
+    border-radius: 50%;
+  }
+
+  #homeButton img, #skillsButton img, #portfolioButton img, #contactButton img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+  
+  #homeButton img, #skillsButton img, #portfolioButton img, #contactButton img {
+    transition: transform 0.3s;
+  }
+  
+  #homeButton:hover, #aboutMeButton:hover, #skillsButton:hover, #portfolioButton:hover, #contactButton:hover {
+    background-color: rgb(0,0,205);
+    border-radius: 30%;   
+    width: 8rem; 
+  }
+
+  #homeButton:hover img, #aboutMeButton:hover img, #skillsButton:hover img, #portfolioButton:hover img, #contactButton:hover img {
+    transform: scale(1.2);
+  }
+  
+  #homeButton .text, #aboutMeButton .text, #skillsButton .text, #portfolioButton .text, #contactButton .text {
+    display: none;
+    margin-left: 10px;
+    font-size: 14px;
+    color: white;
+  }
+  
+  #homeButton:hover .text, #aboutMeButton:hover .text, #skillsButton:hover .text, #portfolioButton:hover .text, #contactButton:hover .text {
+    display: block;
+  }
+
+/* Size to aboutMe button*/
+  #aboutMeButton img {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+  }
+
+/*CONFIGURATION BODY*/
+
+/* Section Home*/
+
+#homeSection{
+    display: flexbox;
+    align-items: center;
+    height: 39rem;
+    margin-left: 10rem;
+    /* flex-direction: column; */
+    
+}
+
+#homeSection h1{
+    /* justify-content: center; */
+    padding: 25% 0 0 0;
+    font-size: 6rem;
+    color: darkslategrey;
+    
+}
+
+#homeSection #overwrite-text{
+  animation: sobreescribir 3s infinite;
+  font-size: 3rem;
+  color: rgb(255,69,0);
+  font-weight: bold;
+}
+
+@keyframes sobreescribir{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* Sections*/
+#contactSection{
+    margin-top: 0.1rem;
+}
+
+#aboutMeSection, #skillsSection, #portfolioSection, #contactSection {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 40rem;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+#aboutMeSection h2, #skillsSection h2, #portfolioSection h2, #contactSection h2{
+    font-size: 3rem;
+    color: darkslategrey;
+}
+
+#aboutMeSection p{
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: 2rem 4rem 0 7rem;
+}
+
+#skillsSection div{
+    height: 100%;    
+    padding: 31% 0;
+}
+
+#skillsSection i{
+    margin-right: 6rem;
+    transform: scale(6);
+}
+
+#portfolioSection div{
+    height: 100%;
+    display:flex;
+    margin-top: 1.5%;
+}
+
+#portfolioSection div div{
+    border: 4px solid rgb(220,220,220);
+    height: 20rem;
+    width: 20rem;
+    margin-right: 1rem;
+    align-items: center;
+    justify-content:center;
+}
+
+#portfolioSection div div h3{
+    font-size: 3rem;
+    color: rgb(255,69,0);
+    text-align: center;
+}
