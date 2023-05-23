@@ -50,7 +50,7 @@
     <main>
         <section id="homeSection">
             <h1>Oscar Beltran</h1>
-            <p id="overwrite-text">I am developer</p>
+            <p id="overwrite-text">I am developer.</p>
         </section>
 
         <section id="aboutMeSection">
@@ -98,7 +98,42 @@
 
         <section id="contactSection">
             <h2>Contact</h2>
-            <div></div>
+            <div id="contacts">    
+                <div id="icons">
+                    <i id="email">
+                        <img src="sources\image\contact.png" alt="email">
+                        <span class="text">Email:</span>
+                        <span class="meText">ombeltranduk@gmail.com</span>
+                    </i>
+                    <i id="phone">
+                        <img src="sources\image\cellphone.png" alt="cellphone">
+                        <span class="text">Cellphone:</span>
+                        <span class="meText">+1(908)5498122</span>
+                    </i>
+                </div>
+                <div id="form">
+                    <form action="Get" method="post">
+                        <div id="lineone">
+                            <!-- User name -->
+                            <input type="text" name="username" id="username" placeholder="Your Name" required>
+                            <!-- Email -->
+                            <input type="email" name="useremail" id="useremail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Your Email" required>
+                        </div>
+                        <div id="linetwo">
+                            <!-- Subject -->
+                            <input type="text" name="usersubject" id="usersubject" placeholder="Subject" maxlength="60" required>
+                        </div>
+                        <div id="linethree">
+                            <!-- Message -->
+                            <textarea name="usermessage" id="usermessage" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <div id="linefour">
+                            <!-- submit -->
+                            <input type="submit" name="buttonsubmit" id="buttonsubmit" value="Send Message">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

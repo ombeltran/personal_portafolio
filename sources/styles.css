@@ -12,6 +12,7 @@ nav {
     flex-direction: column;
     margin-left: 0.5rem;
     padding: 11% 0%;
+    z-index: 2;
 }
 
 /* Buttons Menu */
@@ -81,7 +82,7 @@ nav {
 
 #homeSection h1{
     /* justify-content: center; */
-    padding: 25% 0 0 0;
+    padding: 20% 0 0 0;
     font-size: 6rem;
     color: darkslategrey;
     
@@ -128,7 +129,8 @@ nav {
 #aboutMeSection p{
     font-size: 1.3rem;
     text-align: justify;
-    margin: 2rem 4rem 0 7rem;
+    margin: 4rem 3rem 0 11rem;
+    width: 75%;
 }
 
 #skillsSection div{
@@ -138,7 +140,7 @@ nav {
 
 #skillsSection i{
     margin-right: 6rem;
-    transform: scale(6);
+    transform: scale(400%);
 }
 
 #portfolioSection div{
@@ -160,4 +162,109 @@ nav {
     font-size: 3rem;
     color: rgb(255,69,0);
     text-align: center;
+}
+
+#contactSection{
+  display: flex;
+  width: 100%;
+  /* background-color: blue; */
+}
+#contactSection #contacts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+}
+
+#contactSection h2{
+  width: 100%;
+  text-align: center;
+}
+
+#contactSection #icons{
+  width: 30rem;
+  display: flex;
+  /* background-color: yellow; */
+  flex-direction: column;
+  margin-left: 0;
+}
+
+#contactSection i{
+  display: inline-flex;
+}
+
+#contactSection img{
+  width: 4rem;
+  height: 4rem;
+}
+
+#contactSection span{
+  color: darkslategrey;
+  font-size: 1.5rem;
+  margin-right: 4px;
+  padding-top: 1rem;
+}
+
+#contactSection .text{
+  font-weight: bold;
+}
+
+#contactSection #contacts{
+  width: 100%;
+}
+
+#contactSection #form{
+  float: right;
+  flex-direction: column;
+  width: 48%;
+  margin-top: 5%;
+}
+
+#contactSection #form form div{
+  margin-bottom: 4%;
+}
+
+#contactSection #form form input, textarea{
+  border: 2px solid darkslategrey;
+  color: darkslategrey;
+  border-radius: 5px;
+}
+
+#contactSection #form form input{
+  height: 2rem;
+}
+
+#contactSection #form #lineone{
+  display: flex;
+}
+
+#contactSection #form #lineone input{
+  flex: 1;
+  margin-right: 10px;
+}
+
+#contactSection #form #lineone input:last-child{
+  margin-right: 0;
+}
+
+#contactSection #form #linetwo input, #linethree textarea, #lineone{
+  width: 100%;
+}
+
+#contactSection #form #linefour{
+  text-align: center;
+}
+
+#contactSection #form #linefour input{
+  width: 11rem;
+  height: 2.5rem;
+  background-color: blue;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
