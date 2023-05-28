@@ -15,6 +15,13 @@ nav {
     z-index: 2;
 }
 
+#toggle-menu{
+  position:fixed;
+  z-index: 1;
+  margin-left: 82%;
+  visibility: hidden;
+}
+
 /* Buttons Menu */
 #homeButton, #aboutMeButton, #skillsButton, #portfolioButton, #contactButton {
     position: relative;
@@ -328,26 +335,69 @@ nav {
   }
 }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 428px) {  
+
+  /* HOME SECTION */
   #homeSection{
-    margin-left: 6rem;
+    margin-left: 1rem;
     background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 1) 65%), url("../sources/image/miFoto.jpg");
     outline: none;
     width: 90%;    
   }
 
+  #toggle-menu img{
+    max-width: 100%;
+  }
+  
+  #toggle-menu{    
+    position: fixed;
+    z-index: 1;
+    margin-left: 85%;
+    cursor: pointer;
+    width: 40px;
+    visibility: visible;
+  }
+
+  nav{
+    visibility: hidden;
+  }
+
+  #homeButton, #aboutMeButton, #skillsButton, #portfolioButton, #contactButton {
+    /* background-color: rgb(0,0,205); */
+    border-radius: 30%;   
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 8rem; 
+  }
+
+
+  /* ABOUT SECTION */
+  #aboutMeSection div p{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  #aboutMeSection div{
+    margin-right: 5rem;
+  }
+
+  /* SKILLS SECTION  */
   #skillsSection div{
-    margin-left: 8rem;
+    margin-left: 2rem;
     margin-top: 40%;
   }
 
   #skillsSection div i{
-    margin-right: 1.5rem;
+    margin-right: 2rem;
     transform: scale(200%);
   }
 
+  /* PORTFOLIO SECTION  */
   #portfolioSection #portfolio{
-    margin-left: 9rem;
+    margin-left: 1rem;
     margin-top: 30%;
   }
 
@@ -357,9 +407,10 @@ nav {
     margin-right: 1rem;
   }
 
+  /* CONTACT SECTION  */
   #contactSection #icons{
-    margin-left: 10rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 0rem;
   } 
 
   #contactSection span{
@@ -367,13 +418,18 @@ nav {
   }
 
   #contactSection #form{
-    width: 38%;
+    width: 95%;
     margin-right: 1rem;
     margin-left: 0;
   }
 
   #contactSection #form #linetwo input, #linethree textarea, #lineone input{
     width: 100%;
+  }
+
+  #contactSection i{
+    display: flex;
+    flex-direction: column;
   }
 
 }
