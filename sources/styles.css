@@ -286,7 +286,7 @@ nav {
 
 /*Web responsive Media query*/
 
-@media only screen and (max-width: 770px) {
+/* @media only screen and (max-width: 770px) {
   #homeSection{
     margin-left: 6rem;
     background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 1) 76%), url("../sources/image/miFoto.jpg");
@@ -333,9 +333,9 @@ nav {
   #contactSection #form #linetwo input, #linethree textarea, #lineone input{
     width: 100%;
   }
-}
+} */
 
-@media only screen and (max-width: 428px) {  
+@media only screen and (max-width: 770px) {  
 
   /* HOME SECTION */
   #homeSection{
@@ -352,7 +352,8 @@ nav {
   #toggle-menu{    
     position: fixed;
     z-index: 1;
-    margin-left: 85%;
+    /* margin-left: 85%; */
+    margin-right: 0px;
     cursor: pointer;
     width: 40px;
     visibility: visible;
