@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-/* NAV BAR CONFIGURATION*/
+/* **************** NAV BAR CONFIGURATION ************* */
 
 nav {
     display: flex;
@@ -48,7 +48,6 @@ nav {
   
   #homeButton:hover, #aboutMeButton:hover, #skillsButton:hover, #portfolioButton:hover, #contactButton:hover {
     background-color: rgb(0,0,205);
-    /* border-radius: 30%;    */
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -78,9 +77,9 @@ nav {
     border-radius: 50%;
   }
 
-/*CONFIGURATION BODY*/
+/* ************** CONFIGURATION BODY ******************* */
 
-/* Section Home*/
+/* *********************** Section Home ******************* */
 #homeSection{
     display: flexbox;
     align-items: center;
@@ -121,10 +120,7 @@ nav {
   }
 }
 
-/* Sections Contact*/
-#contactSection{
-    margin-top: 0.1rem;
-}
+/* *********************** Sections ******************* */
 
 #aboutMeSection, #skillsSection, #portfolioSection, #contactSection {
     display: flex;
@@ -140,6 +136,8 @@ nav {
     color: darkslategrey;
 }
 
+/* *********************** Section About ******************* */
+
 #aboutMeSection p{
     font-size: 1.3rem;
     text-align: justify;
@@ -147,6 +145,7 @@ nav {
     width: 75%;
 }
 
+/* *********************** Section Skill ******************* */
 #skillsSection div{
     height: 100%;    
     padding: 31% 0;
@@ -157,6 +156,7 @@ nav {
     transform: scale(400%);
 }
 
+/* *********************** Section Portfolio ******************* */
 #portfolioSection div{
     height: 100%;
     display:flex;
@@ -164,7 +164,7 @@ nav {
 }
 
 #portfolioSection div div{
-    border: 4px solid rgb(220,220,220);
+    border: 4px solid rgb(135,206,235);
     height: 20rem;
     width: 20rem;
     margin-right: 1rem;
@@ -179,6 +179,11 @@ nav {
 
 #portfolioSection div div img:hover {
   transform: scale(1.1);
+}
+
+/* *********************** Section Contact ******************* */
+#contactSection{
+  margin-top: 0.1rem;
 }
 
 #contactSection{
@@ -286,58 +291,9 @@ nav {
 
 /*Web responsive Media query*/
 
-/* @media only screen and (max-width: 770px) {
-  #homeSection{
-    margin-left: 6rem;
-    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 1) 76%), url("../sources/image/miFoto.jpg");
-    
-  }
-
-  #aboutMeSection div{
-    margin-right: 3rem;
-  }
-
-  #skillsSection div{
-    margin-left: 3rem;
-  }
-
-  #skillsSection div i{
-    margin-right: 3rem;
-    transform: scale(300%);
-  }
-
-  #portfolioSection #portfolio{
-    margin-left: 5rem;
-  }
-
-  #portfolioSection div div{
-    height: 11rem;
-    width: 11rem;
-    margin-right: 1rem;
-  }
-
-  #contactSection #icons{
-    margin-left: 6rem;
-  } 
-
-  #contactSection span{
-    font-size: 1.3rem;
-  }
-
-  #contactSection #form{
-    width: 38%;
-    margin-right: 2rem;
-    margin-left: 0;
-  }
-
-  #contactSection #form #linetwo input, #linethree textarea, #lineone input{
-    width: 100%;
-  }
-} */
-
 @media only screen and (max-width: 770px) {  
 
-  /* HOME SECTION */
+  /* ************ HOME SECTION ************* */
   #homeSection{
     margin-left: 1rem;
     background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 1) 65%), url("../sources/image/miFoto.jpg");
@@ -351,20 +307,35 @@ nav {
   
   #toggle-menu{    
     position: fixed;
-    z-index: 1;
-    /* margin-left: 85%; */
     margin-right: 0px;
+    margin-top: 2px;
     cursor: pointer;
-    width: 40px;
+    width: 30px;
     visibility: visible;
+    z-index: 2;
   }
 
-  nav{
+  #menuHamburguer{
+    position: absolute;
+    /* z-index: 3; */
+  }
+
+  #menuClose{
+    position: absolute;
+    z-index: 3;
+    height: 25px;
     visibility: hidden;
   }
 
+  nav{
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    background-color: white;
+    z-index: 1;
+  }
+
   #homeButton, #aboutMeButton, #skillsButton, #portfolioButton, #contactButton {
-    /* background-color: rgb(0,0,205); */
     border-radius: 30%;   
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -373,8 +344,15 @@ nav {
     width: 8rem; 
   }
 
+  #homeButton .text, #aboutMeButton .text, #skillsButton .text, #portfolioButton .text, #contactButton .text {
+    display: block;
+    margin-left: 10px;
+    font-size: 14px;
+    color: white;
+  }
 
-  /* ABOUT SECTION */
+
+  /* ************** ABOUT SECTION ***************** */
   #aboutMeSection div p{
     margin-left: 2rem;
     margin-top: 2rem;
@@ -385,7 +363,7 @@ nav {
     margin-right: 5rem;
   }
 
-  /* SKILLS SECTION  */
+  /* ******************* SKILLS SECTION ********************  */
   #skillsSection div{
     margin-left: 2rem;
     margin-top: 40%;
@@ -396,7 +374,7 @@ nav {
     transform: scale(200%);
   }
 
-  /* PORTFOLIO SECTION  */
+  /* *********************** PORTFOLIO SECTION *************************  */
   #portfolioSection #portfolio{
     margin-left: 1rem;
     margin-top: 30%;
@@ -408,7 +386,7 @@ nav {
     margin-right: 1rem;
   }
 
-  /* CONTACT SECTION  */
+  /* ************************ CONTACT SECTION ***********************  */
   #contactSection #icons{
     margin-left: 2rem;
     margin-right: 0rem;
