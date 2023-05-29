@@ -15,24 +15,24 @@ const navMenu = document.querySelector("nav");
 let miSize = 0;
 
 toggleMenuHamb.addEventListener('click', () => {
-    navMenu.style.visibility = 'visible';
-    toggleMenuHamb.style.visibility = 'hidden';
-    toggleMenuClose.style.visibility = 'visible';
+    navMenu.style.display = 'flex';
+    toggleMenuHamb.style.display = 'none';
+    toggleMenuClose.style.display = 'flex';
     miSize = 1;
 });
 
 navMenu.addEventListener('click',() => {
     if (miSize === 1){
-        navMenu.style.visibility = 'hidden';
-        toggleMenuClose.style.visibility = 'hidden';
-        toggleMenuHamb.style.visibility = 'visible';
+        navMenu.style.display = 'none';
+        toggleMenuClose.style.display = 'none';
+        toggleMenuHamb.style.display = 'flex';
     }
 });
 
 toggleMenuClose.addEventListener('click', () => {
     if (miSize === 1){
-        navMenu.style.visibility = 'hidden';
-        toggleMenuClose.style.visibility = 'hidden';
-        toggleMenuHamb.style.visibility = 'visible';
+        navMenu.style.display = 'none';
+        toggleMenuClose.style.display = 'none';
+        toggleMenuHamb.style.display = 'flex';
     }
 })
