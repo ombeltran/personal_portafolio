@@ -60,6 +60,7 @@ nav {
   }
   
   .text {
+    text-decoration: none;
     display: none;
     margin-left: 10px;
     font-size: 14px;
@@ -344,13 +345,15 @@ nav {
   }
 
   .text {
-    text-decoration: none !important;
     display: block;
     margin-left: 10px;
     font-size: 14px;
     color: white;
   }
 
+  nav .text {
+    text-decoration: none;
+  }
 
   /* ************** ABOUT SECTION ***************** */
   #aboutMeSection div p{
